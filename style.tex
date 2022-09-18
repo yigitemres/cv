@@ -5,17 +5,17 @@
 {0em}
 {\bfseries}[\titlerule]
 
-\titleformat{\subsection}
+\titleformat{\subsection}[runin]
 {\normalsize}
-{}
+{\hspace{0em}}
 {0em}
 {\bfseries\underline}
 
-\titleformat{\subsubsection}[runin]
+\titleformat{\subsubsection}
 {\small}
 {\hspace{0em}}
 {0em}
-{\bfseries}[]
+{\bfseries\underline}[]
 
 %\titlespacing{\subsubsection}
 %{0em}
@@ -36,3 +36,11 @@
 
     {\hfill\myphone}
 }
+
+\xpatchcmd{\itemize}
+{\def\makelabel}
+{
+	\vspace{-1.4em}
+	\setlength{\itemsep}{-0.7em}
+	\def\makelabel}
+{}{}
