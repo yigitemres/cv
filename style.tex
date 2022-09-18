@@ -1,0 +1,38 @@
+%% Title Formatting %%%%%%%%%%%%%%%%%
+\titleformat{\section}
+{\large}
+{}
+{0em}
+{\bfseries}[\titlerule]
+
+\titleformat{\subsection}
+{\normalsize}
+{}
+{0em}
+{\bfseries\underline}
+
+\titleformat{\subsubsection}[runin]
+{\small}
+{\hspace{0em}}
+{0em}
+{\bfseries}[]
+
+%\titlespacing{\subsubsection}
+%{0em}
+%{0em}
+%{0em}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewcommand{\maketitle}{
+    {\raggedright\large\bfseries\myname}
+    {\hfill \mygmail}
+
+    {\hfill\myphone}
+}
+
+\newcommand{\makebaslik}{
+    {\raggedright\large\bfseries\myisim}
+    {\hfill \mygmail}
+
+    {\hfill\myphone}
+}

@@ -1,0 +1,63 @@
+\documentclass[a4paper, 9pt]{extarticle}
+
+\input{packages.tex}
+\input{style.tex}
+\input{cvref.tex}
+
+\begin{document}
+
+\makebaslik{}
+\myegitim{}
+\mydeneyim{}
+
+\section{Bitirme Projesi}
+\subsubsection{Güvenliği Artırılmış Mesajlaşma Platformu (Python 3)} \hfill \\
+\vspace{-1.9em} \begin{itemize}
+    \itemsep-0.7em
+    \item Diffie-Hellman kütüphanesi kullanıldı.
+    \item Sistem yormaması açısından MongoDB tercih edildi.
+    \item WebSocket kullanılarak server oluşturuldu.
+\end{itemize}
+
+\section{Bağımsız Projeler}
+\subsubsection{Kişisel Dosya Yedekleyici (Python 3)} \hfill \\
+\vspace{-1.9em}\begin{itemize}
+    \itemsep-0.7em
+    \item \emph{Dotfiles} yedeklemesini kolaşlaştırmak için yapıldı.
+    \item 2 yıl kullanıldı.
+    \item Yerini "\emph{git init --bare root}" yöntemi aldı.
+\end{itemize}
+
+\subsubsection{Haber Toplayıcı (News Aggregator) (Python 3)} \hfill \\
+\vspace{-1.9em} \begin{itemize}
+    \itemsep-0.7em
+    \item Inoreader'ın yerine kişisel kullanım için yapıldı.
+    \item Sadece PC'de kullanılabildiği için sonlandırıldı.
+\end{itemize}
+
+\subsubsection{Haber Toplayıcı (News Aggregator) (Go)} \hfill \\
+\vspace{-1.9em} \begin{itemize}
+    \itemsep-0.7em
+    \item Python projesinin Go alternatifi.
+\end{itemize}
+
+\subsubsection{Yee Light Paketi (ELisp)} \hfill \\
+\vspace{-1.9em}\begin{itemize}
+    \itemsep-0.7em
+    \item Emacs içinden \emph{yeecli} python paketine komut gönderimi sağlar.
+\end{itemize}
+
+\subsubsection{Metrik $\longleftrightarrow$ Emperyal Birim Çevirici (ELisp)} \hfill \\
+\vspace{-1.9em}\begin{itemize}
+    \itemsep-0.7em
+    \item Emperyal birimleri metrik birimleri çevirmeyi sağlar.
+    \item Ayrıca Emacs'te seçili bölgede ilgili emperyal birimleri tespit edip otomatik olarak birim çevrimi yapar.
+    %% Eğer bulunan emperyal birimlerin metrik birimlere çevriminde birden fazla birim seçeneği varsa (fit -> cm yada mm) önceden belirlenmiş kurala göre en uygun olanına çevirim yapar.
+\end{itemize}
+
+\mydiller{}
+\myteknikbecerilerb{}
+\myhobilerb{}
+
+\pagenumbering{gobble}
+\end{document}

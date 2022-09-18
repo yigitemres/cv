@@ -1,0 +1,5 @@
+*
+# Except:
+!*.tex
+!.gitignore
+!Makefile
