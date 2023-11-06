@@ -7,4 +7,4 @@ cvtr:
 	pdflatex  "\nonstopmode\input" "cvtr.tex"
 
 clean:
-	rm *.aux *.bbl *.blg *.fdb_latexmk *.log
+	@rm *.aux *.bbl *.blg *.fdb_latexmk *.log

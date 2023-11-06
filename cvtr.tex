@@ -11,59 +11,76 @@
 \mydeneyim{}
 
 \section{Bitirme Projesi}
+
 \subsection{Güvenliği Artırılmış Mesajlaşma Platformu (Python 3)}
 \hfill \\
 \begin{itemize}
-\item Diffie-Hellman kütüphanesi kullanıldı.
-\item Sistem yormaması açısından MongoDB tercih edildi.
-\item WebSocket kullanılarak server oluşturuldu.
+	\item Diffie-Hellman kütüphanesi kullanıldı.
+	\item Sistem yormaması açısından MongoDB tercih edildi.
+	\item WebSocket kullanılarak server oluşturuldu.
 \end{itemize}
 
 \section{Kişisel Projeler}
-\subsection{Kişisel Dosya Yedekleyici (Python 3)} \hfill \\
+
+\subsection{IBBApi (C++)} \hfill \\
 \begin{itemize}
-\item \emph{Dotfiles} yedeklemesini kolaşlaştırmak için yapıldı.
-\item 2 yıl kullanıldı.
-\item Yerini "\emph{git init --bare root}" yöntemi aldı.
+	\item Mevcut İBB API'larına cli üzerinden erişir.
+	\item Proje ilk başladığında balık ve sebze-meyve halinden fiyat çekip,
+	\underline{\emph{\hyperref[lisp:frp]{Yemek Tarif Paketi (ELisp)}}}'nden mevcut malzeme giderlerinin hesaplanması için yapıldı.
 \end{itemize}
 
-\subsection{Haber Toplayıcı (News Aggregator) (Python 3 \& Go)} \hfill \\
+\subsection{4 Yönlü Ballistik Yazılımı (C++)} \hfill \\
 \begin{itemize}
-\item Inoreader'ın yerine kişisel kullanım için yapıldı.
-\item Go versiyonu Python projesine alternatif olarak Go öğrenmek için yapıldı.
-\item Sadece PC'de kullanılabildiği için sonlandırıldı.
+	\item 4 Yönlü serbestlik derecesinde (DOF) ballistik hesaplama yapar.
+	\item Rüzgar sapma değerleri de mevcuttur.
 \end{itemize}
 
-\subsection{Yee Light Paketi (ELisp)} \hfill \\
+\subsection{Yemek Tarifi Paketi (ELisp)} \label{lisp:frp} \hfill \\
 \begin{itemize}
-\item Emacs içinden \emph{yeecli} python paketine komut gönderimi sağlar.
-\end{itemize}
-
-\subsection{Yemek Tarifi Paketi (ELisp)} \hfill \\
-\begin{itemize}
-\item Emacs içinden yemek tariflerinin gösterilmesini ve ilgili tarifin
+	\item Emacs içinden yemek tariflerinin gösterilmesini ve ilgili tarifin
 	malzemelerine dinamik değerler atanmasını sağlar.
-\item Bu paketin amacı yemek tariflerinde ana malzemeye göre belirlenen
-	oranlarda (bknz: Ekmek yapımında malzemeler un ağırlığına göre değişkennlik
-	gösterir) olan değişimin değişkenlerle hesaplamasını yapıp kullanıcıya
+	\item Bu paketin amacı yemek tariflerinde ana malzemeye göre belirlenen
+	oranlarda (bknz: Ekmek yapımında malzemeler un ağırlığına göre değişkenlik
+	gösterir) olan değişimin, değişkenlerle hesaplamasını yapıp kullanıcıya
 	göstermektir. Malzemelerin gramajları statik değil dinamik olarak belirlenir.
 \end{itemize}
-
-% \subsection{Youtube-DLP Paketi (ELisp)} \hfill \\
-% \begin{itemize}
-% \item Emacs içinden \emph{yt-dlp} python paketine komut gönderimi sağlar.
-% \end{itemize}
 
 \subsection{Metrik $\longleftrightarrow$ Emperyal Birim Çevirici (ELisp)}
 \hfill \\
 \begin{itemize}
-\item Emperyal birimleri metrik birimlere çevirmeyi sağlar.
-\item Ayrıca Emacs'te seçili bölgede ilgili emperyal birimleri tespit edip
+	\item Emperyal birimleri metrik birimlere çevirmeyi sağlar.
+	\item Ayrıca Emacs'te seçili bölgede ilgili emperyal birimleri tespit edip
 	otomatik olarak birim çevirimi yapar.
 	% Eğer bulunan emperyal birimlerin metrik birimlere çevriminde birden fazla
 	% birim seçeneği varsa (fit -> cm yada mm) önceden belirlenmiş kurala göre en
 	% uygun olanına çevirim yapar.
 \end{itemize}
+
+% \subsection{Youtube-DLP Paketi (ELisp)} \hfill \\
+% \begin{itemize}
+	% \item Emacs içinden \emph{yt-dlp} python paketine komut gönderimi sağlar.
+	% \end{itemize}
+
+\subsection{Yee Light Paketi (ELisp)} \hfill \\
+\begin{itemize}
+	\item Emacs içinden \underline{\emph{\href{https://gitlab.com/stavros/yeecli/-/tree/master}{yeecli}}} python paketine komut gönderimi sağlar.
+\end{itemize}
+
+\subsection{Haber Toplayıcı (News Aggregator) (Python 3 \& Go)} \hfill \\
+\begin{itemize}
+	\item Inoreader'ın yerine kişisel kullanım için yapıldı.
+	\item Go versiyonu Python projesine alternatif olarak Go öğrenmek için yapıldı.
+	\item Sadece PC'de kullanılabildiği için sonlandırıldı.
+\end{itemize}
+
+\subsection{Kişisel Dosya Yedekleyici (Python 3)} \hfill \\
+\begin{itemize}
+	\item \emph{Dotfiles} yedeklemesini kolaşlaştırmak için yapıldı.
+	\item 2 yıl kullanıldı.
+	\item Yerini "\emph{git init --bare root}" yöntemi aldı.
+\end{itemize}
+
+\newpage
 
 \mydiller{}
 \myteknikbecerilerb{}
