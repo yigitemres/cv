@@ -1,5 +1,6 @@
 *
 # Except:
+!*.pdf
 !*.tex
 !.gitignore
 !Makefile
