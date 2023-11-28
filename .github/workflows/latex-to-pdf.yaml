@@ -1,8 +1,8 @@
 name: Github Action for LaTeX
 on: [push]
 jobs: 
-	build_latex: 
-		runs_on: ubuntu-latest
+	latex-to-pdf: 
+		runs-on: ubuntu-latest
 		steps: 
 			- name: Setup Git repos
 			  uses: actions/checkout@v3
