@@ -1,0 +1,21 @@
+name: Github Action for LaTeX
+on: [push]
+jobs: 
+	build_latex: 
+		runs_on: ubuntu-latest
+		steps: 
+			- name: Setup Git repos
+			  uses: actions/checkout@v3
+			- name: Github Action for LaTeX
+			  uses: xu-cheng/latex-action@3.1.0
+			  with: 
+				  root_file: |
+					  cvtr.tex
+					  cv.tex
+			- name: Upload PDF file(s)
+			  uses: actions/upload-artifact@v3
+			  with: 
+				  name: PDF
+				  path: |
+					  cvtr.pdf
+					  cv.pdf
