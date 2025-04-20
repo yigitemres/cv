@@ -1,99 +1,256 @@
 %% Definitions %%%%%%%%%%%%%%%%%%%%
-\def\myphone{0538 041 40 30}
-\def\mygmail{yigitemres@gmail.com}
-\def\mypm{yigitemres@pm.me}
-\def\mygradyear{2011 --- 2017 Fall}
-\def\mymezuniyet{2011 --- 2017 Sonbahar}
-\def\mythm{https://tryhackme.com/p/yigitemres}
-\def\myzipcode{34800}
+\newcommand{\myphone}{0538 041 40 30}
+\newcommand{\mygmail}{yigitemres@gmail.com}
+\newcommand{\mypm}{yigitemres@pm.me}
+\newcommand{\mygradyear}{2011 --- 2017 Fall}
+\newcommand{\mymezuniyet}{2011 --- 2017 Sonbahar}
+\newcommand{\mythm}{https://tryhackme.com/p/yigitemres}
+\newcommand{\myzipcode}{34800}
 %% Turkish %%%%%%%%%%%%%%%%%%%%%%%%
-\def\myisim{Yiğit Emre Şahinoğlu}
-\def\myadres{
+\newcommand{\myisim}{Yiğit Emre Şahinoğlu}
+\newcommand{\myadres}{
     Soğuksu Mahallesi Karadut Sokak
     Kardelen Konutları 6/1 D.6 Beykoz/İstanbul
     }
-\def\myuniversite{Bahçeşehir Üniversitesi}
-\def\myfakulte{Mühendislik ve Doğa Bilimleri Fakültesi}
-\def\mydepartman{Bilgisayar Mühendisliği (İngilizce)}
+\newcommand{\myuniversite}{Bahçeşehir Üniversitesi}
+\newcommand{\myfakulte}{Mühendislik ve Doğa Bilimleri Fakültesi}
+\newcommand{\mydepartman}{Bilgisayar Mühendisliği (İngilizce)}
 
 %% English %%%%%%%%%%%%%%%%%%%%%%%%%
-\def\myname{Yigit Emre Sahinoglu}
-\def\myaddress{
+\newcommand{\myname}{Yigit Emre Sahinoglu}
+\newcommand{\myaddress}{
     Soguksu Mahallesi Karadut Sokak
     Kardelen Konutlari 6/1 D.6 Beykoz/Istanbul
     }
-\def\myuniversity{Bahcesehir University}
-\def\myfaculty{Faculty of Engineering and Natural Sciences}
-\def\mydepartment{Computer Engineering (English)}
+\newcommand{\myuniversity}{Bahcesehir University}
+\newcommand{\myfaculty}{Faculty of Engineering and Natural Sciences}
+\newcommand{\mydepartment}{Computer Engineering (English)}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\def\myeducation{
+\newcommand{\myeducation}{
     \section{Education}
     {\bfseries \myuniversity{} \hfill \myfaculty{}}\\
     {\mydepartment{} \hfill \mygradyear{}}
 }
 
-\def\myegitim{
+\newcommand{\myegitim}{
     \section{Eğitim}
     {\bfseries \myuniversite{} \hfill \myfakulte{}}\\
     {\mydepartman{} \hfill \mymezuniyet{}}
 }
 
-\def\myexperience{
-    \section{Experience}
+\newcommand{\myexperience}{
+    \section{Work Experience}
+	{\bfseries Besiktas Municipality}\\
+	Computer Engineer \hfill 2024
+
+	\section{Internship Experience}
     {\bfseries Besiktas Municipality}\\
     Internship \hfill 2016
 }
 
-\def\mydeneyim{
-    \section{Deneyim}
-    {\bfseries Beşiktaş Belediyesi}\\
+\newcommand{\mydeneyim}{
+	\section{İş Deneyimi}
+	{\bfseries Beşiktaş Belediyesi}\\
+	Bilgisayar Mühendisi \hfill 2024
+
+    \section{Staj Deneyimi}
+	{\bfseries Beşiktaş Belediyesi}\\
     Staj \hfill 2016
 }
 
-\def\mylanguages{
+\newcommand{\myprojects}{
+	\section{Capstone Project}
+
+	\subsection{Security Enhanced Messaging Platform (Python 3)} \hfill \\
+	\begin{itemize}
+		\item Python Diffie-Hellman library
+		\item MongoDB
+		\item WebSocket
+	\end{itemize}
+
+	\section{Personal Projects}
+
+	\subsection{IBBApi CLI (C++)} \hfill \\
+	\begin{itemize}
+		\item It connects several IBB (Istanbul Metropolitan Municipality) API's from cli.
+		\item It's start as a project to get whosale market hall prices from IBB API to use
+		with \refs{lisp:frp}{Food Recipe Package (ELisp)}.
+	\end{itemize}
+
+	\subsection{4DOF Ballistics Software (C++)} \hfill \\
+	\begin{itemize}
+		\item Made for 4-DOF ballistic calculations.
+		\item Also have windage values (but don't have windage corrections).
+	\end{itemize}
+
+
+	\subsection{Food Recipe Package (ELisp)} \label{lisp:frp} \hfill \\
+	\begin{itemize}
+		\item Emacs package that reads food recipe files and change the ingredients
+		values according to main value.
+		\item Purpose of this package is that some food recipe ingredients has to be
+		calculated according to main ingredient
+		(e.g. Bread ingredients calculated according to flour). When you change your
+		main ingredient value whole recipe ingredients values are changes according
+		to it.
+	\end{itemize}
+
+
+	\subsection{Metric $\longleftrightarrow$ Imperial Convertor (ELisp)} \hfill \\
+	\begin{itemize}
+		\item Emacs package that converts imperial units to metric units
+		(and vice versa).
+		\item Also can scan Emacs region and automaticaly converts units. If imperial
+		unit can be converted to more than one metric unit (e.g. foot to cm or mm)
+		use predefined rule to convert more suitable one.
+	\end{itemize}
+
+% \subsection{Youtube-DLP Packgae (ELisp)} \hfill \\
+% \begin{itemize}
+% \item Simple Emacs package that send commands to \emph{yt-dlp} python
+% 	package.
+% \end{itemize}
+
+	\subsection{Yee Light Package (ELisp)} \hfill \\
+	\begin{itemize}
+		\item Simple Emacs package that send commands to \links{https://gitlab.com/stavros/yeecli/-/tree/master}{yeecli} python
+		package.
+	\end{itemize}
+
+	\subsection{News Aggregator (Two Versions: Python 3 \& Go)} \hfill \\
+	\begin{itemize}
+		\item Created as Inoreader alternative for personal usage.
+		\item Go version is the same as the Python 3 project but its written in Go
+		for learning purpose.
+		\item It's abonded due to only works on PC.
+	\end{itemize}
+
+
+	\subsection{Dotfiles Backupper (Python 3)} \hfill \\
+	\begin{itemize}
+		\item Made for backing up \emph{Dotfiles} for both Windows and Linux.
+		\item Used nearly for 2 years.
+		\item Replaced with "\emph{git init --bare root}" method.
+	\end{itemize}
+}
+
+\newcommand{\myprojeler}{
+	\section{Bitirme Projesi}
+
+	\subsection{Güvenliği Artırılmış Mesajlaşma Platformu (Python 3)}
+	\hfill \\
+	\begin{itemize}
+	\item Diffie-Hellman kütüphanesi kullanıldı.
+	\item Sistem yormaması açısından MongoDB tercih edildi.
+	\item WebSocket kullanılarak server oluşturuldu.
+	\end{itemize}
+
+	\section{Kişisel Projeler}
+
+	\subsection{IBBApi (C++)} \hfill \\
+	\begin{itemize}
+	\item Mevcut İBB API'larına cli üzerinden erişir.
+	\item Proje ilk başladığında balık ve sebze-meyve halinden fiyat çekip,
+	\refs{lisp:frp}{Yemek Tarif Paketi (ELisp)}'nden mevcut malzeme giderlerinin hesaplanması için yapıldı.
+	\end{itemize}
+
+	\subsection{4 Yönlü Ballistik Yazılımı (C++)} \hfill \\
+	\begin{itemize}
+	\item 4 Yönlü serbestlik derecesinde (DOF) ballistik hesaplama yapar.
+	\item Rüzgar sapma değerleri de mevcuttur.
+	\end{itemize}
+
+	\subsection{Yemek Tarifi Paketi (ELisp)} \label{lisp:frp} \hfill \\
+	\begin{itemize}
+	\item Emacs içinden yemek tariflerinin gösterilmesini ve ilgili tarifin
+	malzemelerine dinamik değerler atanmasını sağlar.
+	\item Bu paketin amacı yemek tariflerinde ana malzemeye göre belirlenen
+	oranlarda (bknz: Ekmek yapımında malzemeler un ağırlığına göre değişkenlik
+	gösterir) olan değişimin, değişkenlerle hesaplamasını yapıp kullanıcıya
+	göstermektir. Malzemelerin gramajları statik değil dinamik olarak belirlenir.
+	\end{itemize}
+
+	\subsection{Metrik $\longleftrightarrow$ Emperyal Birim Çevirici (ELisp)}
+	\hfill \\
+	\begin{itemize}
+	\item Emperyal birimleri metrik birimlere çevirmeyi sağlar.
+	\item Ayrıca Emacs'te seçili bölgede ilgili emperyal birimleri tespit edip
+	otomatik olarak birim çevirimi yapar.
+	% Eğer bulunan emperyal birimlerin metrik birimlere çevriminde birden fazla
+	% birim seçeneği varsa (fit -> cm yada mm) önceden belirlenmiş kurala göre en
+	% uygun olanına çevirim yapar.
+	\end{itemize}
+
+% \subsection{Youtube-DLP Paketi (ELisp)} \hfill \\
+% \begin{itemize}
+	% \item Emacs içinden \emph{yt-dlp} python paketine komut gönderimi sağlar.
+	% \end{itemize}
+
+	\subsection{Yee Light Paketi (ELisp)} \hfill \\
+	\begin{itemize}
+	\item Emacs içinden \links{https://gitlab.com/stavros/yeecli/-/tree/master}{yeecli} python paketine komut gönderimi sağlar.
+	\end{itemize}
+
+	\subsection{Haber Toplayıcı (News Aggregator) (Python 3 \& Go)} \hfill \\
+	\begin{itemize}
+	\item Inoreader'ın yerine kişisel kullanım için yapıldı.
+	\item Go versiyonu Python projesine alternatif olarak Go öğrenmek için yapıldı.
+	\item Sadece PC'de kullanılabildiği için sonlandırıldı.
+	\end{itemize}
+
+	\subsection{Kişisel Dosya Yedekleyici (Python 3)} \hfill \\
+	\begin{itemize}
+	\item \emph{Dotfiles} yedeklemesini kolaşlaştırmak için yapıldı.
+	\item 2 yıl kullanıldı.
+	\item Yerini "\emph{git init --bare root}" yöntemi aldı.
+	\end{itemize}
+}
+
+
+\newcommand{\mylanguages}{
     \section{Languages}
 	Turkish (L1), English (B2+), Russian (A2)
 	}
 
-\def\mydiller{
+\newcommand{\mydiller}{
     \section{Diller}
 	Türkçe (Anadil --- L1), İngilizce (Akademik --- B2+), Rusça (Başlangıç --- A2)
 }
 
-\def\thmrank{
+\newcommand{\thmrank}{
     \links{\mythm}{TryHackMe Rank}: 2033 (39624 Pts)
 }
 
-\def\thmderece{
+\newcommand{\thmderece}{
     \links{\mythm}{TryHackMe Derecesi}: 2033 (39624 Puan)
 }
 
-\def\cybersec{
+\newcommand{\cybersec}{
 	Network Exploitation\\
 	Privilege Escalation\\
 	Web Exploitation\\
 	\thmrank{}
 }
 
-\def\siberguvenlik{
+\newcommand{\siberguvenlik}{
 	Network Exploitation\\
 	Privilege Escalation\\
 	Web Exploitation\\
 	\thmderece{}
 }
 
-\def\mysertifikalar{
+\newcommand{\mysertifikalar}{
 	\section{Sertifikalar}
 	\begin{minipage}[t]{0.70\textwidth}
-		\btkakademi{xr4t0Emyk7}{BTK Akademi --- Uygulamalı Sızma Testi Eğitimi}\\
-		\btkakademi{L8dcnAr4D2}{BTK Akademi --- Kali Linux}\\
-		\btkakademi{gK2ho10Koz}{BTK Akademi --- Versiyon Kontrolleri: Git ve GitHub}\\
-		\btkakademi{WJ1SMbmn8v}{BTK Akademi --- Sızma Testine Giriş}\\
-		\btkakademi{AJaSdopX72}{BTK Akademi --- Siber Güvenlikte Linux İşletim Sistemleri}\\
-		\links{https://www.udemy.com/certificate/UC-28e8574e-70b4-4ed9-b557-9255351e47bc/}{Udemy --- Broad Scope Bug Bounties From Scratch}\\
-		\links{https://www.udemy.com/certificate/UC-790760ef-c0d5-4b93-8998-0abad1747c92/}{Udemy --- Practical Ethical Hacking - The Complete Course}\\
-		\links{https://www.udemy.com/certificate/UC-b391a9f6-60af-44e7-9dc4-e7e2141e19f9/}{Udemy --- The Ultimate BAC and IDOR Guide for Ethical Hacking}\\
+		\btkakademi{xr4t0Emyk7}{BTK Akademi—Uygulamalı Sızma Testi Eğitimi}\\
+		\btkakademi{L8dcnAr4D2}{BTK Akademi—Kali Linux}\\
+		\btkakademi{gK2ho10Koz}{BTK Akademi—Versiyon Kontrolleri: Git ve GitHub}\\
+		\btkakademi{WJ1SMbmn8v}{BTK Akademi—Sızma Testine Giriş}\\
+		\btkakademi{AJaSdopX72}{BTK Akademi—Siber Güvenlikte Linux İşletim Sistemleri}\\
+		\links{https://www.udemy.com/certificate/UC-28e8574e-70b4-4ed9-b557-9255351e47bc/}{Udemy—Broad Scope Bug Bounties From Scratch}\\
+		\links{https://www.udemy.com/certificate/UC-790760ef-c0d5-4b93-8998-0abad1747c92/}{Udemy—Practical Ethical Hacking—The Complete Course}\\
+		\links{https://www.udemy.com/certificate/UC-b391a9f6-60af-44e7-9dc4-e7e2141e19f9/}{Udemy—The Ultimate BAC and IDOR Guide for Ethical Hacking}\\
 		\links{https://www.udemy.com/certificate/UC-cf02a61d-3998-4e0a-a055-f92869c47940/}{Udemy --- XSS Survival Guide}\\
 		Wissen Akademi --- Advanced Network Systems Engineering\\
 		Wissen Akademi --- Cloud Computing and Its Applications\\
@@ -101,17 +258,17 @@
     \end{minipage}
 }
 
-\def\mycertificates{
+\newcommand{\mycertificates}{
 	\section{Certificates}
 	\begin{minipage}[t]{0.70\textwidth}
-		\btkakademi{xr4t0Emyk7}{BTK Akademi --- Applied Penetration Testing Training}\\
-		\btkakademi{L8dcnAr4D2}{BTK Akademi --- Kali Linux}\\
-		\btkakademi{gK2ho10Koz}{BTK Akademi --- Version Controls: Git \& GitHub}\\
-		\btkakademi{WJ1SMbmn8v}{BTK Akademi --- Introduction to Penetration Testing}\\
-		\btkakademi{AJaSdopX72}{BTK Akademi --- Linux Operating Systems in Cyber Security}\\
-		\links{https://www.udemy.com/certificate/UC-28e8574e-70b4-4ed9-b557-9255351e47bc/}{Udemy --- Broad Scope Bug Bounties From Scratch}\\
-		\links{https://www.udemy.com/certificate/UC-790760ef-c0d5-4b93-8998-0abad1747c92/}{Udemy --- Practical Ethical Hacking - The Complete Course}\\
-		\links{https://www.udemy.com/certificate/UC-b391a9f6-60af-44e7-9dc4-e7e2141e19f9/}{Udemy --- The Ultimate BAC and IDOR Guide for Ethical Hacking}\\
+		\btkakademi{xr4t0Emyk7}{BTK Akademi—Applied Penetration Testing Training}\\
+		\btkakademi{L8dcnAr4D2}{BTK Akademi—Kali Linux}\\
+		\btkakademi{gK2ho10Koz}{BTK Akademi—Version Controls: Git \& GitHub}\\
+		\btkakademi{WJ1SMbmn8v}{BTK Akademi—Introduction to Penetration Testing}\\
+		\btkakademi{AJaSdopX72}{BTK Akademi—Linux Operating Systems in Cybersecurity}\\
+		\links{https://www.udemy.com/certificate/UC-28e8574e-70b4-4ed9-b557-9255351e47bc/}{Udemy—Broad Scope Bug Bounties From Scratch}\\
+		\links{https://www.udemy.com/certificate/UC-790760ef-c0d5-4b93-8998-0abad1747c92/}{Udemy—Practical Ethical Hacking—The Complete Course}\\
+		\links{https://www.udemy.com/certificate/UC-b391a9f6-60af-44e7-9dc4-e7e2141e19f9/}{Udemy—The Ultimate BAC and IDOR Guide for Ethical Hacking}\\
 		\links{https://www.udemy.com/certificate/UC-cf02a61d-3998-4e0a-a055-f92869c47940/}{Udemy --- XSS Survival Guide}\\
 		Wissen Akademi --- Advanced Network Systems Engineering\\
 		Wissen Akademi --- Cloud Computing and Its Applications\\
@@ -119,7 +276,7 @@
     \end{minipage}
 }
 
-\def\myhobbies{
+\newcommand{\myhobbies}{
     \section{Hobbies and Interests}
 	Card Magician\\
 	Fishing\\
@@ -130,7 +287,7 @@
 	Wet Shaving Enthusiast
 }
 
-\def\myhobiler{
+\newcommand{\myhobiler}{
     \section{Hobiler ve İlgi Alanları}
 	Amatör Balıkçılık\\
 	Amatör İllüzyon\\
@@ -140,7 +297,7 @@
 	Saraciye
 }
 
-\def\mytechnicalskillsb{
+\newcommand{\mytechnicalskillsb}{
     \section{Technical Skills}
     \vspace{-0.19em}
     \begin{minipage}[t]{0.45\textwidth}
@@ -158,7 +315,7 @@
         Reverse Engineering (Beginner)\\
     \end{minipage}
 	\begin{minipage}[t]{0.45\textwidth}
-		\subsubsection{Cyber Security}
+		\subsubsection{Cybersecurity}
         \cybersec{}\\
     \end{minipage}
     \begin{minipage}[t]{0.45\textwidth}
@@ -172,7 +329,7 @@
     \end{minipage}
 }
 
-\def\myteknikbecerilerb{
+\newcommand{\myteknikbecerilerb}{
     \section{Teknik Beceriler}
     \vspace{-0.19em}
     \begin{minipage}[t]{0.45\textwidth}
@@ -204,7 +361,7 @@
     \end{minipage}
 }
 
-\def\myhobbiesb{
+\newcommand{\myhobbiesb}{
     \section{Hobbies and Interests}
     \vspace{-0.19em}
     \begin{minipage}[t]{0.45\textwidth}
@@ -220,7 +377,7 @@
     \end{minipage}
 }
 
-\def\myhobilerb{
+\newcommand{\myhobilerb}{
     \section{Hobiler ve İlgi Alanları}
     \vspace{-0.19em}
     \begin{minipage}[t]{0.45\textwidth}
